@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up -- Form</title>
+</head>
+
+<body>
+    <div class="SignUp">
+        <form class="signUp-form">
+            <h1>Welcome !</h1>
+            <p class="to">
+                to <span>UsmanSports</span> Website For Players
+            </p>
+            <div class="inputs">
+                <div class="input-div">
+                    <input type="file" id="file" onchange="getFile(event)">
+                    <label for="file">+</label>
+                </div>
+                <div class="input-div">
+                    <input type="text" id="PlayerName" placeholder="Enter Your Player Name">
+                </div>
+                <div class="input-div">
+                    <input type="text" id="PlayerAddress" placeholder="Enter Your Player Address">
+                </div>
+                <div class="input-div">
+                    <input type="text" id="PlayerCity" placeholder="Enter Your City">
+                </div>
+                <div class="input-div">
+                    <input type="text" id="PlayerState" placeholder="Enter Your State">
+                </div>
+                <div class="input-div">
+                    <input type="text" id="Zip" placeholder="Enter Your Zip">
+                </div>
+                <div class="input-div">
+                    <input type="text" id="Phone" placeholder="Enter Your Phone">
+                </div>
+                <div class="input-div">
+                    <input type="text" id="Gender" placeholder="Enter Your Gender">
+                </div>
+                <div class="input-div">
+                    <input type="text" id="CaptainName" placeholder="Enter Your Captain Name">
+                </div>
+                <div class="input-div">
+                    <input type="text" id="CompanyName" placeholder="Enter Your Company Name">
+                </div>
+                <div class="input-div">
+                    <input type="date" id="DateOfBirth">
+                </div>
+
+                <div class="input-div">
+                    <select name="" id="right-left">
+                        <option value="right-hand">right-hand</option>
+                        <option value="left-hand">left-hand</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="links">
+                <button onclick="return register()">Sign Up</button>
+                <p>
+                    Have an Account ?
+                    <a href="/">Login</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="./script.js"></script>
+</html>
+</body>

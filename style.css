@@ -1,0 +1,860 @@
+*,
+*::after,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* ################# SCROLL CODE HERE ################# */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d83b3b;
+    border-radius: 10px;
+}
+
+
+/* ########### LOADER ########## */
+
+#loading {
+    background: url("./images/loadng.gif") center no-repeat var(--pure-color);
+    z-index: 9999999999 !important;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+/* ############ HEADINGS AND ELMENTS DEFINING ############# */
+
+span {
+    color: var(--main-color);
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 50px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+
+.comp-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.comp {
+    color: var(--main-color);
+}
+
+.news-date {
+    color: var(--blue-color);
+}
+
+/* ############ DEFINING COLORS ############ */
+
+:root {
+    --main-color: #d83b3b;
+    --pure-color: #fff;
+    --dark-color: #000;
+    --grey-color: #dadada;
+    --blue-color: #0d0057;
+}
+
+/* ############# NAVBAR STARTS HERE ############# */
+
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.474);
+}
+
+/* ########### LOGO STYLE HERE ########## */
+
+
+nav .logo {
+    color: var(--pure-color);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+/* ########## NAVIGATION MENU HERE ############ */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+/* ############ NAVIGATION BUTTON HERE ############ */
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    margin-left: 70px;
+}
+
+.button a {
+    padding: 10px 30px;
+    font-size: 16px;
+    border: 1px solid var(--pure-color);
+    color: var(--pure-color);
+    background-color: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.button a:hover {
+    border: 1px solid var(--pure-color);
+    color: var(--main-color);
+    background-color: var(--pure-color);
+}
+
+/* ########## NAVIGATION LINKS HERE ########## */
+
+.nav_link {
+    list-style: none;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_link li a  {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--pure-color);
+}
+
+/* ########### IMAGE NAVIGATION SECTION ######### */
+
+.profileImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImage img {
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+/* ############ NAVIGATION ICONS ########### */
+
+.BarIcons i.fa-bars {
+    display: none;
+}
+
+.BarIcons i.fa-xmark {
+    display: none;
+}
+
+/* ########### SEARCH SECTION STARTS ########### */
+
+.search-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 450px;
+}
+
+.search-box {
+    border: 1px solid var(--pure-color);
+    padding: 10px 30px;
+}
+
+.search-image .search-box input {
+    background-color: transparent;
+    border: none;
+    color: var(--pure-color);
+    outline: none;
+    width: 70px;
+    position: relative;
+    font-size: 16px;
+}
+
+.search-image .search-box input::placeholder {
+    color: var(--pure-color);
+}
+
+.search-image .search-box i {
+    color: var(--pure-color);
+    font-size: 16px;
+}
+
+
+/* ############# NAVIGATION ENDS HERE ############# */
+
+
+/* ############## MAIN SECTION STARTS HERE ############# */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.717), rgba(0, 0, 0, 0.682)), url("./images/bg.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 55%, 50% 95%, 0 55%);
+    color: var(--pure-color);
+}
+
+/* ############# MAIN CONTENT STARTS ########### */
+
+main .main-content {
+    width: 600px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* ############# MAIN CONTENT STARTS ########### */
+
+main .main-content .main-heading h1 {
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+/* ############# MAIN BUTTON STARTS ########### */
+
+main .main-content button {
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    text-transform: capitalize;
+    border: none;
+    color: var(--pure-color);
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* ############## MAIN SECTION STARTS ENDS ############# */
+
+/* ############# NEWS SECTION STARTS HERE ############## */
+
+.news-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ############## MAIN NEWS IMAGES STARTS ############## */
+
+.main-news-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.071), rgba(0, 0, 0, 0.166)), url("./images/news.webp");
+    width: 45%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.main-news-head {
+    background-color: var(--blue-color);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: var(--pure-color);
+    font-style: italic;
+    transform: translateY(10px) translateX(-440px);
+}
+
+.main-news-image h1 {
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    color: var(--pure-color);
+    padding: 10px 30px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+/* ############# NEWS CARDS HERE ########### */
+
+.new-news-here {
+    width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.news-cards .news-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: column;
+    width: 305px;
+    height: 310px;
+    background-color: var(--pure-color);
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.152);
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+/* ############ NEWS CONTENT ########### */
+
+.news-card .news-content {
+    padding: 10px 20px;
+}
+
+.news-content h3 {
+    color: var(--blue-color);
+    margin-bottom: 10px;
+}
+
+/* ############# NEWS SECTION STARTS END ############## */
+
+/* ############## VIDEOS SECTION STARTS ############### */
+
+.videos-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.videos-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    width: 320px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.257);
+    margin-right: 10px;
+}
+
+/* ############ VIDEOS IMAGES ############### */
+
+.video-card img {
+    width: 100%;
+    position: relative;
+}
+
+/* ########### VIDEOS THUMBNAIL DURATION ########### */
+
+.video-card .duration {
+    position: relative;
+    left: 10px;
+    width: 80px;
+    transform: translateY(-20px) translateX(100px);
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pure-color);
+}
+
+.video-card .duration:before {
+    content: "";
+    background-color: var(--main-color);
+    transform: skew(-10deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1rem;
+}
+
+.video-card .duration:after {
+    background-color: var(--main-color);
+    transform: skew(-10deg);
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1rem;
+}
+
+/* ########## VIDEOS CONTENT HERE ############ */
+
+.video-card .video-content {
+    padding: 10px 30px;
+    margin-top: -20px;
+}
+
+.video-card .video-content h1 {
+    font-size: 20px;
+    text-align: center;
+    color: var(--blue-color);
+}
+
+.videos-date-comp {
+    margin-top: 20px;
+}
+
+/* ############## VIDEOS SECTION ENDS ############### */
+
+/* ################ MATCH HIGHLIGHT STARTS ########### */
+
+.match-highlights {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    margin-top: 20px;
+}
+
+.match-highlights .video-highlights {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.video-highlights h1 {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.match-highlights .videos {
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 37%;
+    height: 100%;
+}
+
+.match-highlights .videos .video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 450px;
+    color: #fff;
+    background-color: #ffffff23;
+}
+
+.video h1 {
+    margin-left: 20px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.match-highlights .videos .video img {
+    width: 200px;
+}
+
+/* ################ MATCH HIGHLIGHT ENDS ########### */
+
+/* #######TOURNAMENT STATS STARTS ########## */
+
+.tournament-stats {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 95vh;
+    margin-top: 100px;
+    flex-direction: column;
+    overflow: hidden;
+    color: var(--pure-color);
+    background-color: var(--main-color);
+}
+
+.tournament-stats .stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    margin-left: 20px;
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    background-color: #96000090;
+}
+
+.stats .stat .flag img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.count-stat .count {
+    font-size: 60px;
+}
+
+.stat-content h1 {
+    font-size: 1.8rem;
+}
+
+.stat .stat-content h1 span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.stat .man img {
+    width: 230px;
+}
+
+.flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 280px;
+}
+
+.stat-content .count {
+    color: var(--pure-color);
+}
+
+.tournament-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tournament-stats .tournament-heading h1 {
+    font-size: 40px;
+}
+
+.tournament-stats .tournament-heading h3 {
+    font-size: 30px;
+}
+
+.stat h3 {
+    text-transform: uppercase;
+}
+
+.stat-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-count .count-stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-border{
+    border: 30px solid #f2ea14;
+    border-radius: 50%;
+    width: 190px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stat-count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #######TOURNAMENT STATS ENDS ########## */
+
+/* ############### PARTNERS SECTION STARTS ############# */
+
+.partners {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    flex-direction: column;
+}
+
+.partners .partners-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners .partners-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.partners .partners-1 img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.partners .partners-2 img {
+    width: 160px;
+    margin-right: 20px;
+}
+
+/* ############### PARTNERS SECTION ENDS ############# */
+
+/* ############### FOOTER SECTION STARTS HERE ################ */
+
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--pure-color);
+    padding-top: 20px;
+}
+
+.col-1 {
+    font-size: 18px;
+}
+
+.col-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.col-1 .icons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.col-1 .icons i {
+    font-size: 40px;
+}
+
+.col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.col-2 .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    height: 45px;
+    background-color: var(--pure-color);
+    width: 100%;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ############### FOOTER SECTION ENDS HERE ################ */
+
+/* ############## RESPONSIVE MOBILE AND IPAD SECTION STARTS HERE ############## */
+
+@media (max-width : 878px) {
+    main {
+        padding: 10px 10px;
+    }
+
+    .menu {
+        background-color: #d83b3b;
+        position: fixed;
+        min-height: 105vh;
+        right: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        top: 20px;
+    }
+
+    .menu .nav_link {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 350px;
+    }
+
+    .menu li a {
+        font-size: 25px;
+    }
+
+    .menu.openMenu {
+        max-height: 190vh;
+    }
+
+    .news-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .news-cards .news-card {
+        width: 305px;
+    }
+
+    .videos-section {
+        height: auto;
+    }
+
+    .partners-1,
+    .partners-2 {
+        flex-wrap: wrap;
+    }
+
+    .partners {
+        height: auto;
+    }
+
+    .partners img {
+        margin-bottom: 30px;
+    }
+
+    .col-1 {
+        width: 100%;
+    }
+
+    .new-news-here {
+        width: 100%;
+    }
+
+    .main-news-image {
+        width: 85%;
+        height: 85vh;
+    }
+
+    .BarIcons i.fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+/* ############## RESPONSIVE MOBILE AND IPAD SECTION END HERE ############## */
+
+/* ############## RESPONSIVE TABLET SECTION STARTS HERE ############## */
+
+@media (max-width : 1300px) {
+    .news-section {
+        height: auto;
+    }
+
+    .news-cards .news-card {
+        width: 305px;
+    }
+
+    .main-news-image {
+        height: 100vh;
+    }
+
+    .videos-section {
+        height: auto;
+    }
+
+    .partners-1,
+    .partners-2 {
+        flex-wrap: wrap;
+    }
+
+    .partners {
+        height: auto;
+    }
+
+    .col-1 {
+        width: 100%;
+    }
+
+    .partners img {
+        margin-bottom: 30px;
+    }
+}
+
+/* ############## RESPONSIVE TABLET SECTION END HERE ############## */

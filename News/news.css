@@ -1,0 +1,501 @@
+*,
+*::after,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* ################# SCROLL CODE HERE ################# */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d83b3b;
+    border-radius: 10px;
+}
+
+/* ########### LOADER ########## */
+
+#loading {
+    background: url("./images/loadng.gif") center no-repeat var(--pure-color);
+    z-index: 9999999999 !important;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+/* ############ HEADINGS AND ELMENTS DEFINING ############# */
+
+span {
+    color: var(--main-color);
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 50px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+
+.comp-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.comp {
+    color: var(--main-color);
+}
+
+.news-date {
+    color: var(--blue-color);
+}
+
+/* ############ DEFINING COLORS ############ */
+
+:root {
+    --main-color: #d83b3b;
+    --pure-color: #fff;
+    --dark-color: #000;
+    --grey-color: #dadada;
+    --blue-color: #0d0057;
+}
+
+/* ############# NAVBAR STARTS HERE ############# */
+
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.474);
+}
+
+/* ########### LOGO STYLE HERE ########## */
+
+
+nav .logo {
+    color: var(--pure-color);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+/* ########## NAVIGATION MENU HERE ############ */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+/* ############ NAVIGATION BUTTON HERE ############ */
+
+.button a {
+    padding: 10px 30px;
+    font-size: 16px;
+    border: 1px solid var(--pure-color);
+    color: var(--pure-color);
+    background-color: transparent;
+    transition: 0.6s;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    margin-left: 70px;
+}
+
+.button a:hover {
+    border: 1px solid var(--pure-color);
+    color: var(--main-color);
+    background-color: var(--pure-color);
+}
+
+/* ########## NAVIGATION LINKS HERE ########## */
+
+.nav_link {
+    list-style: none;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_link li a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--pure-color);
+}
+
+/* ########### IMAGE NAVIGATION SECTION ######### */
+
+.profileImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImage img {
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+/* ############ NAVIGATION ICONS ########### */
+
+.BarIcons i.fa-bars {
+    display: none;
+}
+
+.BarIcons i.fa-xmark {
+    display: none;
+}
+
+/* ########### SEARCH SECTION STARTS ########### */
+
+.search-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.search-box {
+    border: 1px solid var(--pure-color);
+    padding: 10px 30px;
+}
+
+.search-image .search-box input {
+    background-color: transparent;
+    border: none;
+    color: var(--pure-color);
+    outline: none;
+    width: 70px;
+    position: relative;
+    font-size: 16px;
+}
+
+.search-image .search-box input::placeholder {
+    color: var(--pure-color);
+}
+
+.search-image .search-box i {
+    color: var(--pure-color);
+    font-size: 16px;
+}
+
+
+/* ############# NAVIGATION ENDS HERE ############# */
+
+/* ############## VIDEOS SECTION STARTS ############### */
+
+.videos-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.videos-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    width: 320px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.257);
+    margin-right: 10px;
+}
+
+/* ############ VIDEOS IMAGES ############### */
+
+.video-card img {
+    width: 100%;
+    position: relative;
+}
+
+/* ########### VIDEOS THUMBNAIL DURATION ########### */
+
+.video-card .duration {
+    position: relative;
+    left: 10px;
+    width: 80px;
+    transform: translateY(-20px) translateX(100px);
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pure-color);
+}
+
+.video-card .duration:before {
+    content: "";
+    background-color: var(--main-color);
+    transform: skew(-10deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1rem;
+}
+
+.video-card .duration:after {
+    background-color: var(--main-color);
+    transform: skew(-10deg);
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1rem;
+}
+
+/* ########## VIDEOS CONTENT HERE ############ */
+
+.video-card .video-content {
+    padding: 10px 30px;
+    margin-top: -20px;
+}
+
+.video-card .video-content h1 {
+    font-size: 20px;
+    text-align: center;
+    color: var(--blue-color);
+}
+
+.videos-date-comp {
+    margin-top: 20px;
+}
+
+/* ############## VIDEOS SECTION ENDS ############### */
+
+/* ############# NEWS SECTION STARTS HERE ############## */
+
+.news-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ############## MAIN NEWS IMAGES STARTS ############## */
+
+.main-news-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.071), rgba(0, 0, 0, 0.166)), url("./images/news.webp");
+    width: 45%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.main-news-head {
+    background-color: var(--blue-color);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: var(--pure-color);
+    font-style: italic;
+    transform: translateY(10px) translateX(-440px);
+}
+
+.main-news-image h1 {
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    color: var(--pure-color);
+    padding: 10px 30px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+/* ############# NEWS CARDS HERE ########### */
+
+.new-news-here {
+    width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.news-cards .news-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: column;
+    width: 305px;
+    height: 310px;
+    background-color: var(--pure-color);
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.152);
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+/* ############ NEWS CONTENT ########### */
+
+.news-card .news-content {
+    padding: 10px 20px;
+}
+
+.news-content h3 {
+    color: var(--blue-color);
+    margin-bottom: 10px;
+}
+
+/* ############# NEWS SECTION STARTS END ############## */
+
+/* ############### PARTNERS SECTION STARTS ############# */
+
+.partners {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    flex-direction: column;
+}
+
+.partners .partners-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners .partners-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.partners .partners-1 img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.partners .partners-2 img {
+    width: 160px;
+    margin-right: 20px;
+}
+
+/* ############### PARTNERS SECTION ENDS ############# */
+
+/* ############### FOOTER SECTION STARTS HERE ################ */
+
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--pure-color);
+    padding-top: 20px;
+}
+
+.col-1 {
+    font-size: 18px;
+}
+
+.col-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.col-1 .icons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.col-1 .icons i {
+    font-size: 40px;
+}
+
+.col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.col-2 .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    height: 45px;
+    background-color: var(--pure-color);
+    width: 100%;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ############### FOOTER SECTION ENDS HERE ################ */
