@@ -51,7 +51,8 @@ function regsiter() {
           .then((result) => {
             swal("Good Job !", "SignUp Successful", "success");
             setInterval(() => {
-              window.location.href = "/";
+              window.location.href =
+                "https://kashanadnan.github.io/Sports-Website-FrontEnd/";
             }, 3000);
           })
           .catch((err) => {

@@ -7,7 +7,9 @@ axios
                 <a href="/Player">Player</a>
             </div><a href="/Profile"><img src="${result.data.user.avatar}" /></a>`;
   })
-  .catch((err) => {});
+  .catch((err) => {
+    console.log(err);
+  });
 
 function whenLoad() {
   const preloader = (document.getElementById("loading").style.display = "none");
