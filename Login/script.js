@@ -10,7 +10,8 @@ const login = () => {
     .then((result) => {
       swal("Good Job !", "Login Successful", "success");
       setInterval(() => {
-        window.location.href = "/";
+        window.location.href =
+          "https://kashanadnan.github.io/Sports-Website-FrontEnd/";
       }, 3000);
     })
     .catch((err) => {
